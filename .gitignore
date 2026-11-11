@@ -9,7 +9,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Environment files
+# Environment files — NEVER commit real credentials
 .env
 *.env
 
+# Virtual environment
+venv/
