@@ -1,0 +1,15 @@
+# Data folders (raw and clean weather data)
+data/
+
+# Trained models
+models/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+
