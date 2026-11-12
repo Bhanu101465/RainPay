@@ -1,0 +1,84 @@
+/* Global styles */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+body { background: #f4f7f9; color: #1a1f36; }
+
+/* Demo banner */
+.demo-banner {
+  background: #0070ba;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Nav tabs */
+.nav {
+  display: flex;
+  background: #fff;
+  border-bottom: 2px solid #e3e8ee;
+}
+.nav button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #697386;
+  cursor: pointer;
+}
+.nav button.active {
+  color: #0070ba;
+  border-bottom: 3px solid #0070ba;
+}
+
+/* Page container */
+.page { max-width: 520px; margin: 24px auto; padding: 0 16px; }
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e3e8ee;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card h2 { font-size: 18px; margin-bottom: 16px; }
+
+/* Form controls */
+label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+select, input {
+  width: 100%; padding: 10px 12px;
+  border: 1px solid #d1d9e0; border-radius: 8px;
+  font-size: 14px; margin-bottom: 14px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%; padding: 12px;
+  font-size: 15px; font-weight: 700;
+  border: none; border-radius: 8px; cursor: pointer;
+}
+.btn-blue  { background: #0070ba; color: #fff; }
+.btn-green { background: #107c41; color: #fff; }
+.btn-purple { background: #5c3b99; color: #fff; }
+
+/* Stat grid */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.stat { background: #f8fafc; border: 1px solid #e3e8ee; border-radius: 8px; padding: 12px; text-align: center; }
+.stat-label { font-size: 11px; color: #697386; text-transform: uppercase; margin-bottom: 4px; }
+.stat-value { font-size: 20px; font-weight: 700; }
+
+/* Alert boxes */
+.alert { padding: 12px 16px; border-radius: 8px; margin-top: 14px; font-size: 14px; }
+.alert-info    { background: #ebf5fb; border: 1px solid #bce1f5; }
+.alert-success { background: #dff6dd; border: 1px solid #a8d5a2; color: #107c41; font-weight: 600; }
+.alert-fail    { background: #fed9cc; border: 1px solid #f4a070; color: #d83b01; font-weight: 600; }
+
+/* Risk meter */
+.risk-bar-wrap { background: #e3e8ee; border-radius: 8px; height: 14px; margin: 8px 0; overflow: hidden; }
+.risk-bar      { height: 100%; border-radius: 8px; transition: width 0.4s ease; }
